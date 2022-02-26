@@ -67,12 +67,6 @@
 <dd>
 <div class="desc"><p>Refresh the config file.</p></div>
 </dd>
-<dt id="trading_bot_api.stream_data"><code class="name flex">
-<span>async def <span class="ident">stream_data</span></span>(<span>websocket: starlette.websockets.WebSocket, botId: str, pair: str)</span>
-</code></dt>
-<dd>
-<div class="desc"><p>Stream the ohlc data of the bot.</p></div>
-</dd>
 <dt id="trading_bot_api.stream_logs"><code class="name flex">
 <span>async def <span class="ident">stream_logs</span></span>(<span>websocket: starlette.websockets.WebSocket, botId: str)</span>
 </code></dt>
@@ -84,12 +78,6 @@
 </code></dt>
 <dd>
 <div class="desc"><p>Stream the state of the bot.</p></div>
-</dd>
-<dt id="trading_bot_api.stream_stats"><code class="name flex">
-<span>async def <span class="ident">stream_stats</span></span>(<span>websocket: starlette.websockets.WebSocket, botId: str)</span>
-</code></dt>
-<dd>
-<div class="desc"><p>Stream the stats of the bot.</p></div>
 </dd>
 </dl>
 </section>
@@ -249,10 +237,8 @@
 <li><code><a title="trading_bot_api.get_ping" href="#trading_bot_api.get_ping">get_ping</a></code></li>
 <li><code><a title="trading_bot_api.get_state" href="#trading_bot_api.get_state">get_state</a></code></li>
 <li><code><a title="trading_bot_api.post_refresh_config" href="#trading_bot_api.post_refresh_config">post_refresh_config</a></code></li>
-<li><code><a title="trading_bot_api.stream_data" href="#trading_bot_api.stream_data">stream_data</a></code></li>
 <li><code><a title="trading_bot_api.stream_logs" href="#trading_bot_api.stream_logs">stream_logs</a></code></li>
 <li><code><a title="trading_bot_api.stream_state" href="#trading_bot_api.stream_state">stream_state</a></code></li>
-<li><code><a title="trading_bot_api.stream_stats" href="#trading_bot_api.stream_stats">stream_stats</a></code></li>
 </ul>
 </li>
 <li><h3><a href="#header-classes">Classes</a></h3>
