@@ -49,12 +49,6 @@
 <dd>
 <div class="desc"><p>Get the OHLC data of the bot.</p></div>
 </dd>
-<dt id="trading_bot_api.get_ping"><code class="name flex">
-<span>async def <span class="ident">get_ping</span></span>(<span>botId: str)</span>
-</code></dt>
-<dd>
-<div class="desc"><p>Ping the bot. Wakes it up from sleep if something has changed.</p></div>
-</dd>
 <dt id="trading_bot_api.get_state"><code class="name flex">
 <span>async def <span class="ident">get_state</span></span>(<span>botId: str)</span>
 </code></dt>
@@ -103,30 +97,6 @@
 <h3>Class variables</h3>
 <dl>
 <dt id="trading_bot_api.LogsResponse.logs"><code class="name">var <span class="ident">logs</span> : str</code></dt>
-<dd>
-<div class="desc"></div>
-</dd>
-</dl>
-</dd>
-<dt id="trading_bot_api.PingResponse"><code class="flex name class">
-<span>class <span class="ident">PingResponse</span></span>
-<span>(</span><span>**data: Any)</span>
-</code></dt>
-<dd>
-<div class="desc"><p>Create a new model by parsing and validating input data from keyword arguments.</p>
-<p>Raises ValidationError if the input data cannot be parsed to form a valid model.</p></div>
-<h3>Ancestors</h3>
-<ul class="hlist">
-<li>pydantic.main.BaseModel</li>
-<li>pydantic.utils.Representation</li>
-</ul>
-<h3>Subclasses</h3>
-<ul class="hlist">
-<li>pydantic.main.PingResponse</li>
-</ul>
-<h3>Class variables</h3>
-<dl>
-<dt id="trading_bot_api.PingResponse.success"><code class="name">var <span class="ident">success</span> : bool</code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
@@ -234,7 +204,6 @@
 <li><code><a title="trading_bot_api.get_asset_allocation" href="#trading_bot_api.get_asset_allocation">get_asset_allocation</a></code></li>
 <li><code><a title="trading_bot_api.get_logs" href="#trading_bot_api.get_logs">get_logs</a></code></li>
 <li><code><a title="trading_bot_api.get_ohlc_data" href="#trading_bot_api.get_ohlc_data">get_ohlc_data</a></code></li>
-<li><code><a title="trading_bot_api.get_ping" href="#trading_bot_api.get_ping">get_ping</a></code></li>
 <li><code><a title="trading_bot_api.get_state" href="#trading_bot_api.get_state">get_state</a></code></li>
 <li><code><a title="trading_bot_api.post_refresh_config" href="#trading_bot_api.post_refresh_config">post_refresh_config</a></code></li>
 <li><code><a title="trading_bot_api.stream_logs" href="#trading_bot_api.stream_logs">stream_logs</a></code></li>
@@ -247,12 +216,6 @@
 <h4><code><a title="trading_bot_api.LogsResponse" href="#trading_bot_api.LogsResponse">LogsResponse</a></code></h4>
 <ul class="">
 <li><code><a title="trading_bot_api.LogsResponse.logs" href="#trading_bot_api.LogsResponse.logs">logs</a></code></li>
-</ul>
-</li>
-<li>
-<h4><code><a title="trading_bot_api.PingResponse" href="#trading_bot_api.PingResponse">PingResponse</a></code></h4>
-<ul class="">
-<li><code><a title="trading_bot_api.PingResponse.success" href="#trading_bot_api.PingResponse.success">success</a></code></li>
 </ul>
 </li>
 <li>
