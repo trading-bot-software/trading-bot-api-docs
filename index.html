@@ -5,7 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 <meta name="generator" content="pdoc 0.10.0" />
 <title>trading_bot_api API documentation</title>
-<meta name="description" content="Bot Server API used to communicate over http with bot." />
+<meta name="description" content="Bot Server API used to communicate over http with bot.
+It communicates with it over redis. You can configure the API by setting environment variables …" />
 <link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
 <link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
 <link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
@@ -22,7 +23,8 @@
 <h1 class="title">Package <code>trading_bot_api</code></h1>
 </header>
 <section id="section-intro">
-<p>Bot Server API used to communicate over http with bot.</p>
+<p>Bot Server API used to communicate over http with bot.
+It communicates with it over redis. You can configure the API by setting environment variables at start time.</p>
 </section>
 <section>
 </section>
@@ -35,7 +37,8 @@
 <span>def <span class="ident">get_logs</span></span>(<span>botId: str)</span>
 </code></dt>
 <dd>
-<div class="desc"><p>Get the logs of the bot.</p></div>
+<div class="desc"><p>Get the logs of the bot.
+Only returns last 100 lines.</p></div>
 </dd>
 <dt id="trading_bot_api.get_state"><code class="name flex">
 <span>async def <span class="ident">get_state</span></span>(<span>botId: str)</span>
