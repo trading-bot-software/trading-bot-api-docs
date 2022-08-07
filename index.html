@@ -40,6 +40,12 @@ It communicates with it over redis. You can configure the API by setting environ
 <div class="desc"><p>Get the logs of the bot.
 Only returns last 100 lines.</p></div>
 </dd>
+<dt id="trading_bot_api.get_robot_ids"><code class="name flex">
+<span>async def <span class="ident">get_robot_ids</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>List bot ids.</p></div>
+</dd>
 <dt id="trading_bot_api.get_state"><code class="name flex">
 <span>async def <span class="ident">get_state</span></span>(<span>botId: str)</span>
 </code></dt>
@@ -57,6 +63,30 @@ Only returns last 100 lines.</p></div>
 <section>
 <h2 class="section-title" id="header-classes">Classes</h2>
 <dl>
+<dt id="trading_bot_api.ListResponse"><code class="flex name class">
+<span>class <span class="ident">ListResponse</span></span>
+<span>(</span><span>**data: Any)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Create a new model by parsing and validating input data from keyword arguments.</p>
+<p>Raises ValidationError if the input data cannot be parsed to form a valid model.</p></div>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>pydantic.main.BaseModel</li>
+<li>pydantic.utils.Representation</li>
+</ul>
+<h3>Subclasses</h3>
+<ul class="hlist">
+<li>pydantic.main.ListResponse</li>
+</ul>
+<h3>Class variables</h3>
+<dl>
+<dt id="trading_bot_api.ListResponse.botIds"><code class="name">var <span class="ident">botIds</span> : List[str]</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+</dd>
 <dt id="trading_bot_api.LogsResponse"><code class="flex name class">
 <span>class <span class="ident">LogsResponse</span></span>
 <span>(</span><span>**data: Any)</span>
@@ -145,12 +175,19 @@ Only returns last 100 lines.</p></div>
 <li><h3><a href="#header-functions">Functions</a></h3>
 <ul class="">
 <li><code><a title="trading_bot_api.get_logs" href="#trading_bot_api.get_logs">get_logs</a></code></li>
+<li><code><a title="trading_bot_api.get_robot_ids" href="#trading_bot_api.get_robot_ids">get_robot_ids</a></code></li>
 <li><code><a title="trading_bot_api.get_state" href="#trading_bot_api.get_state">get_state</a></code></li>
 <li><code><a title="trading_bot_api.post_refresh_config" href="#trading_bot_api.post_refresh_config">post_refresh_config</a></code></li>
 </ul>
 </li>
 <li><h3><a href="#header-classes">Classes</a></h3>
 <ul>
+<li>
+<h4><code><a title="trading_bot_api.ListResponse" href="#trading_bot_api.ListResponse">ListResponse</a></code></h4>
+<ul class="">
+<li><code><a title="trading_bot_api.ListResponse.botIds" href="#trading_bot_api.ListResponse.botIds">botIds</a></code></li>
+</ul>
+</li>
 <li>
 <h4><code><a title="trading_bot_api.LogsResponse" href="#trading_bot_api.LogsResponse">LogsResponse</a></code></h4>
 <ul class="">
