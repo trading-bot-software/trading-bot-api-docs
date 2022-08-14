@@ -41,7 +41,7 @@ It communicates with it over redis. You can configure the API by setting environ
 Only returns last 100 lines.</p></div>
 </dd>
 <dt id="trading_bot_api.get_robot_ids"><code class="name flex">
-<span>async def <span class="ident">get_robot_ids</span></span>(<span>)</span>
+<span>async def <span class="ident">get_robot_ids</span></span>(<span>botGroup: str)</span>
 </code></dt>
 <dd>
 <div class="desc"><p>List bot ids.</p></div>
@@ -53,7 +53,7 @@ Only returns last 100 lines.</p></div>
 <div class="desc"><p>Get the state of the bot.</p></div>
 </dd>
 <dt id="trading_bot_api.post_refresh_config"><code class="name flex">
-<span>async def <span class="ident">post_refresh_config</span></span>(<span>botId: str)</span>
+<span>async def <span class="ident">post_refresh_config</span></span>(<span>botGroup: str, botId: str)</span>
 </code></dt>
 <dd>
 <div class="desc"><p>Refresh the config file.</p></div>
